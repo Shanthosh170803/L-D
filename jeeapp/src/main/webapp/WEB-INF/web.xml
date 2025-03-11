@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://java.sun.com/xml/ns/j2ee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>Archetype Created Web Application</display-name>
+	<context-param>
+		<param-name>dbun</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<servlet>
+		<description></description>
+		<display-name>FirstServlet</display-name>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>com.mph.FirstServlet</servlet-class>
+		<init-param>
+			<param-name>un</param-name>
+			<param-value>Shanthosh</param-value>
+		</init-param>
+		<init-param>
+			<param-name>pwd</param-name>
+			<param-value>pass</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/FS</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>SecondServlet</display-name>
+		<servlet-name>SecondServlet</servlet-name>
+		<servlet-class>com.mph.SecondServlet</servlet-class>
+		<init-param>
+			<param-name>un</param-name>
+			<param-value>Saravanan</param-value>
+		</init-param>
+		<init-param>
+			<param-name>pwd</param-name>
+			<param-value>pass</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/SecondServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
